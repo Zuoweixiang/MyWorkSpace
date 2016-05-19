@@ -11,6 +11,22 @@
 
 
 @implementation ZWKeyPathExample
+
+
+/**
+ *  avg =  12,
+ count =  5,
+ max =  14,
+ min = 10,
+ sun = 60,
+ ages = (
+ 10,
+ 11,
+ 12,
+ 13,
+ 14
+ )
+ */
 +(void)keyPathTest
 {
     
@@ -52,7 +68,5 @@
     return peo;
 
 }
-
-
-
 @end
+

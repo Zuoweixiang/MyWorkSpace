@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 
 #import "ZWKeyPathExample.h"
+#import "C_Example.h"
+
 @interface AppDelegate ()
 
 @end
@@ -21,6 +23,8 @@
     
     
     [ZWKeyPathExample keyPathTest];
+    [C_Example array];
+    
     
     return YES;
 }

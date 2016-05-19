@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface C_Example : NSObject
-
++(void)array;
 @end
