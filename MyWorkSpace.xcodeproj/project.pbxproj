@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4966E951CED7ABE002D48A3 /* C_Example.m in Sources */ = {isa = PBXBuildFile; fileRef = C4966E941CED7ABE002D48A3 /* C_Example.m */; };
+		C4966E981CED7B04002D48A3 /* ZWKeyPathExample.m in Sources */ = {isa = PBXBuildFile; fileRef = C4966E971CED7B04002D48A3 /* ZWKeyPathExample.m */; };
 		C4FA52841CED67F000D86C09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FA52831CED67F000D86C09 /* main.m */; };
 		C4FA52871CED67F000D86C09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FA52861CED67F000D86C09 /* AppDelegate.m */; };
 		C4FA528A1CED67F000D86C09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FA52891CED67F000D86C09 /* ViewController.m */; };
@@ -15,7 +17,6 @@
 		C4FA52921CED67F000D86C09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FA52901CED67F000D86C09 /* LaunchScreen.storyboard */; };
 		C4FA529D1CED67F000D86C09 /* MyWorkSpaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FA529C1CED67F000D86C09 /* MyWorkSpaceTests.m */; };
 		C4FA52A81CED67F100D86C09 /* MyWorkSpaceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FA52A71CED67F100D86C09 /* MyWorkSpaceUITests.m */; };
-		C4FA52B81CED688600D86C09 /* ZWKeyPathExample.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FA52B71CED688600D86C09 /* ZWKeyPathExample.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4966E931CED7ABE002D48A3 /* C_Example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C_Example.h; sourceTree = "<group>"; };
+		C4966E941CED7ABE002D48A3 /* C_Example.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C_Example.m; sourceTree = "<group>"; };
+		C4966E961CED7B04002D48A3 /* ZWKeyPathExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZWKeyPathExample.h; path = MyWorkSpace/keyPath/ZWKeyPathExample.h; sourceTree = SOURCE_ROOT; };
+		C4966E971CED7B04002D48A3 /* ZWKeyPathExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZWKeyPathExample.m; path = MyWorkSpace/keyPath/ZWKeyPathExample.m; sourceTree = SOURCE_ROOT; };
 		C4FA527F1CED67F000D86C09 /* MyWorkSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FA52831CED67F000D86C09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4FA52851CED67F000D86C09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,8 +57,6 @@
 		C4FA52A31CED67F000D86C09 /* MyWorkSpaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWorkSpaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FA52A71CED67F100D86C09 /* MyWorkSpaceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWorkSpaceUITests.m; sourceTree = "<group>"; };
 		C4FA52A91CED67F100D86C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4FA52B61CED688600D86C09 /* ZWKeyPathExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWKeyPathExample.h; sourceTree = "<group>"; };
-		C4FA52B71CED688600D86C09 /* ZWKeyPathExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWKeyPathExample.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4966E921CED7A98002D48A3 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C4966E931CED7ABE002D48A3 /* C_Example.h */,
+				C4966E941CED7ABE002D48A3 /* C_Example.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
 		C4FA52761CED67F000D86C09 = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +116,8 @@
 		C4FA52811CED67F000D86C09 /* MyWorkSpace */ = {
 			isa = PBXGroup;
 			children = (
-				C4FA52B51CED682900D86C09 /* model */,
+				C4966E921CED7A98002D48A3 /* C */,
+				C4FA52B51CED682900D86C09 /* keyPath */,
 				C4FA52851CED67F000D86C09 /* AppDelegate.h */,
 				C4FA52861CED67F000D86C09 /* AppDelegate.m */,
 				C4FA52881CED67F000D86C09 /* ViewController.h */,
@@ -144,12 +157,13 @@
 			path = MyWorkSpaceUITests;
 			sourceTree = "<group>";
 		};
-		C4FA52B51CED682900D86C09 /* model */ = {
+		C4FA52B51CED682900D86C09 /* keyPath */ = {
 			isa = PBXGroup;
 			children = (
-				C4FA52B61CED688600D86C09 /* ZWKeyPathExample.h */,
-				C4FA52B71CED688600D86C09 /* ZWKeyPathExample.m */,
+				C4966E961CED7B04002D48A3 /* ZWKeyPathExample.h */,
+				C4966E971CED7B04002D48A3 /* ZWKeyPathExample.m */,
 			);
+			name = keyPath;
 			path = model;
 			sourceTree = "<group>";
 		};
@@ -283,10 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4FA52B81CED688600D86C09 /* ZWKeyPathExample.m in Sources */,
+				C4966E981CED7B04002D48A3 /* ZWKeyPathExample.m in Sources */,
 				C4FA528A1CED67F000D86C09 /* ViewController.m in Sources */,
 				C4FA52871CED67F000D86C09 /* AppDelegate.m in Sources */,
 				C4FA52841CED67F000D86C09 /* main.m in Sources */,
+				C4966E951CED7ABE002D48A3 /* C_Example.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +527,7 @@
 				C4FA52AE1CED67F100D86C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4FA52AF1CED67F100D86C09 /* Build configuration list for PBXNativeTarget "MyWorkSpaceTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +536,7 @@
 				C4FA52B11CED67F100D86C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4FA52B21CED67F100D86C09 /* Build configuration list for PBXNativeTarget "MyWorkSpaceUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +545,7 @@
 				C4FA52B41CED67F100D86C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
