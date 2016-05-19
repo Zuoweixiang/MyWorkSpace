@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+#import "ZWKeyPathExample.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    [ZWKeyPathExample keyPathTest];
+    
     return YES;
 }
 
