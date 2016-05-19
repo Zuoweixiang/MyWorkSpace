@@ -40,8 +40,8 @@
     
     People *peo = [[People alloc]init];
     
-    [peo setValue:mutArr forKey:@"members"];
-    
+    //[peo setValue:mutArr forKey:@"members"];
+    peo.members = mutArr;
     id avg = [peo valueForKeyPath:@"members.@avg.age"];
     id count = [peo valueForKeyPath:@"members.@count"];
     id max = [peo valueForKeyPath:@"members.@max.age"];

@@ -23,15 +23,17 @@
  */
 +(void)array{
     
-    int a[5] = {1,2,3,4,5};
+    int32_t a[5] = {1,2,3,4,5};
     
-    int *ptr = *(&a +1);
+    NSInteger *ptr = *(&a +1);
     
-    int array[2][2] = {1,2,3,4,5,6};
+    NSInteger array[2][2] = {1,2,3,4,5,6};
     
     printf(" %d , %d , %d\n",a,&a,ptr);
     printf(" %d , %d \n",*(a+1),*(ptr-1));
+ 
     
+    printf("%d,%d ,%d,%d",sizeof(a ),sizeof(&a ),sizeof(int32_t ),sizeof(int64_t));
 }
 
 
